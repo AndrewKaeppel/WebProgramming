@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Lab 3</title>
+    </head>
+    <body>
+        <form action="https://www.w3schools.com/action_page.php" method="get">
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="customer_name" />
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="mail" name="cusotmer_email" />
+            </p>
+            <p>
+                <label for="coffee-select">Choose a coffee:</label>
+
+                <select name="coffees" id="coffee-select">
+                    <option value="">-- Select option --</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="americano">Americano</option>
+                    <option value="espresso">Espresso</option>
+                </select>
+            </p>
+            <p>
+                <fieldset>
+                    <legend>Extra</legend>
+                    <div>
+                        <input type="radio" id="whipped_cream" name="extra" value="whipped_cream" />
+                        <label for="whipped_cream">Whipped cream</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="extra_shot" name="extra" value="extra_shot" />
+                        <label for="extra_shot">Extra shot</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="almond_milk" name="extra" value="almond_milk" />
+                        <label for="almond_milk">Almond milk</label>
+                    </div>
+                </fieldset>
+            </p>
+            <p>
+                <label for="instructions">Additional instructions:</label>
+            </p>
+            <p>
+                <textarea id="instructions" name="instructions" rows="6" cols="32"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Send Request" />
+            </p>
+        </form>
+    </body>
+</html>
